@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Crystal Collecter</title>
+  </head>
+  
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Comment out each stylesheet to get the one you'd like to see -->
+  
+   <link rel="stylesheet" href="style3.css">
+   <body>
+    <style>
+body  {
+  background-color: lightblue;
+}
+
+</style>
+
+  
+  <div class="container">
+  <h1>Crystal Collection </h1>
+  </div>
+
+    <!-- When we start playing the game, our HTML will be placed into this div. -->
+   
+     
+  
+          </div>
+          <div class="panel-body">
+            <div class="text-center">
+             <div id= "wins"></div> 
+
+            </div>
+          </div>
+        <div id="game">
+        </div>
+            <div class="button">   
+               <button id= "vis"> <img src="http:pngimg.com/uploads/ruby/ruby_PNG33.png" width="100px" height= "100px" > </button> 
+              <button id="invis"><img src="http://vignette2.wikia.nocookie.net/sonic/images/5/5f/Blue_emerald_Runners.png/revision/latest?cb=20150423132033" width="100px"></span> </button>
+              <button id="yellow"><img src="https://4.imimg.com/data4/JG/MG/MY-23547615/yellow-topaz-250x250.jpg" width="100px"></span> </button>
+    </div>
+      <div id="score"></div>
+
+      <span>
+      
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script type="text/javascript">
+    
+
+      // Our array of possible computer choices.
+      var computerChoices = ["19", "20", "21", "22", "23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54,","55","56","57","58,","59","60","61","62","63","64","65","66","67","68","69","70","71","72","73","74","75","76","77","78","79","80","81","82","83","84","85","86","87","88","89","90","91","92","93","94","95","97","98","99","100","101","102","104","107","108","109","110","111","112","114","117","118","119","120"];
+
+        var users = ["1","2","3","4","5","6","7","8","9","10","11","12"];
+        var wins = 0;
+        var losses= 0;
+        var score = 150;
+       //score = score + 5 
+         var html = "<p>The Hangman Game </p>" +
+          "<p>wins: " + wins + "</p>"; 
+
+           // Sets the computerGuess variable equal to a random choice from the computerChoice array.
+        var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+
+
+
+        
+        
+      // When the user presses a key, it will run the following function...
+      // $(".vis-button").on("click", function() 
+        
+        
+        
+        $("#vis").on("click", function() {
+
+          var image1 = (Math.floor(Math.random()*12)+1000); 
+          score = image1 + score;
+          $("#score").text(score)
+           
+           
+
+          
+           if (image1 > computerGuess ) {
+              wins++;
+              console.log(wins)
+          
+          }
+
+        document.getElementById("game").innerHTML = "wins <strong>" + wins + "</strong> computerGuess <strong>" + computerGuess + "</strong>.";    
+
+        });
+
+          
+
+        $("#invis").on("click", function() {
+
+          var image2 = (Math.floor(Math.random()*12)+1000);
+          score = image2 + score;
+          $("#score").text(score)
+        
+          if (image2 > computerGuess ) {
+              wins++;
+              console.log(wins)
+          
+          }
+
+        document.getElementById("game").innerHTML = "wins <strong>" + wins + "</strong> computerGuess <strong>" + computerGuess + "</strong>.";
+
+
+
+
+        });
+
+         $("#yellow").on("click", function() {
+
+          var image3 = (Math.floor(Math.random()*12)+1000);
+          score = image3 + score;
+         $("#score").text(score)
+        
+         if (image3 > computerGuess ) {
+              wins++;
+              console.log(wins)
+            }
+
+             document.getElementById("game").innerHTML = "wins <strong>" + wins + "</strong> computerGuess <strong>" + computerGuess + "</strong>.";
+
+
+
+         });
+      
+         
+      document.getElementById("game").innerHTML = "wins <strong>" + wins + "</strong> computerGuess <strong>" + computerGuess + "</strong>.";
+
+         
+
+                
+        
+
+          // Injecting the HTML we just created into our div and updating the game information on our page.
+          
+
+          
+
+          
+
+
+     
+    //alert(random);
+ 
+
+//Injecting the HTML we just created into our div and updating the game information on our page.
+          
+
+
+  
+    
+
+
+    
+
+
+
+       
+
+
+    </script>
+        
+
+  </body>
+</html>

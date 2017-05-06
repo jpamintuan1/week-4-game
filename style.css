@@ -1,0 +1,132 @@
+.text-center   {
+	background-color: brown;
+	
+}
+
+.About   {
+  background-color:white; 
+  color: grey;
+  width: 10%; 
+  float: left;
+  margin-left:400px;
+  
+
+}
+.Portfolio{
+	background-color: white;
+	width: 10%;
+	color: grey;
+	float: left;
+}
+.Contact  {
+	background-color: white;
+	width: 10%
+	color: grey;
+	float: left;
+}
+.footer  {
+	
+	margin-top:0px;
+	float:left;
+	width:99%;
+	background-color: #ccc;
+	height: 800px;
+	margin-left: 10px;
+	
+}
+.connect {
+	text-align: center;
+	display: inline-block;
+	color:#20B2AA;
+	width: 25%;
+	background-color: white;
+	margin-left: 110px;
+	height:400px;
+	font-weight: bold;
+	font-size: 200%;
+	vertical-align: top;
+	margin-top:  20px;
+}
+
+
+.portfolio  {
+	margin-top:20px;
+	background-color: white;
+	font-weight: bold;
+	color:#20B2AA;
+	width:60%;
+	font-size: 200%;
+	margin-left:20px;
+	height: 800px;
+	text-align: center;
+	display:inline-block;	
+}
+.bones{
+	width:35%;
+	height: 250px;
+	margin-left:10px;
+	float:left;
+	margin-top:10px;
+}
+
+
+.watson{
+	
+	margin-top: 10px;	
+	width:35%;
+	height: 250px;
+	margin-left: 100px;
+	
+}
+.evil  {
+	width:35%;
+	height:250px;
+	margin-top:10px;
+	margin-left: 10px;
+	
+	
+}
+.apple  {
+	
+	overflow: auto;
+	width:35%;
+	height:250px;
+	margin-left: 100px;
+	margin-top: 10px;
+
+}
+.ai {
+	width:35%;
+	margin-right: 500px;
+	height: 250px;
+	margin-top: 15px;
+
+}
+
+
+img {
+	float: left;
+	height: 110px;
+	width: 120px;
+	margin-left: 0px;
+}
+.linkedin {
+	width: 50%;
+	float: left;
+	margin-left:0px;
+}
+
+@media screen and (max-width: 980px) {
+  }
+
+@media screen and (max-width: 768px) {
+body {
+	background-color: #6495ED;
+}
+@media screen and (max-width: 640px) {
+body { 
+background-color: blue; 
+}
+.Your { position:static; }
+}
+
